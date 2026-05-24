@@ -4,7 +4,7 @@ on:
     workflows: [events]
     types: [completed]
 jobs:
-    echo-string:
-      runs-on: ubuntu-latest
-      steps:
-        - run: echo "I was triggered by completion of the 'events' workflow."
+  echo-string:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "I was triggered by completion of the 'events' workflow."
