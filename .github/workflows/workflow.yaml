@@ -1,0 +1,11 @@
+name: Workflow
+on: 
+  workflow_run:
+    workflows: ["Checkout", "events"]
+    types: [completed]
+
+jobs:
+  Message:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This workflow runs when the 'Checkout' and 'events' workflows are triggered."
