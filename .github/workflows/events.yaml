@@ -10,6 +10,6 @@ jobs:
           echo $GITHUB_SHA
           echo $GITHUB_REF
       - uses: actions/checkout@v4
-      - name: command_execution
+      - name: command_execute
         run: |
              ls -a
