@@ -18,4 +18,4 @@ jobs:
       - name: command_execute
         run: |
              ls -a
-             cd .git
+             
