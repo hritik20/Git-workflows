@@ -1,5 +1,10 @@
 name: events
-on: [push, pull_request, issues]
+on: 
+    push:
+    pull_request:
+        types: [opened, synchronize, reopened]
+    issues:
+        types: [opened]
 
 jobs:
   display-event-info:
