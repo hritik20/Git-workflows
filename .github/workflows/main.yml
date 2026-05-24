@@ -15,7 +15,7 @@ jobs:
   run-python-script:
     needs: run-shell-commands
     runs-on: ubuntu-latest
-    steps:
+    step:
       - name: Run a Python script
         run: |
           echo "Running a Python script..."
