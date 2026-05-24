@@ -3,18 +3,3 @@ app:
   version: 1.0.0
   description: A simple YAML configuration example
 
-database:
-  host: localhost
-  port: 5432
-  user: dbuser
-  password: secret
-  name: basic_db
-
-features:
-  - authentication
-  - logging
-  - metrics
-
-logging:
-  level: info
-  format: json
