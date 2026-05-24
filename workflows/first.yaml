@@ -12,7 +12,7 @@ jobs:
           echo "You can add more commands here as needed."
 
   parallel-commands:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Run multiple commands in parallel
         run: |
