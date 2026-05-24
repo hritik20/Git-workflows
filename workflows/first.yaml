@@ -1,4 +1,5 @@
-name:  First Workflow
+name: First Workflow
+
 on: [push]
 
 jobs:
@@ -14,10 +15,8 @@ jobs:
   parallel-commands:
     runs-on: ubuntu-latest
     steps:
-      - name: Run multiple commands in parallel
+      - name: Run multiple commands
         run: |
           echo "Running command 1"
           sleep 5
           echo "Command 1 completed"
-
-  
