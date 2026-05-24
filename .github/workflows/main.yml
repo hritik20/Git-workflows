@@ -19,5 +19,5 @@ jobs:
       - name: Run a Python script
         run: |
           echo "Running a Python script..."
-          
+          python -c "print('Hello from Python!')"
           
