@@ -20,4 +20,4 @@ jobs:
         run: |
           echo "Running a Python script..."
           python -c "print('Hello from Python!')"
-          python -c "for i in range(5): print(f'Count: {i}')"
+          
