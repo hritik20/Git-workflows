@@ -8,4 +8,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: Echo a string
-            run: echo "I was triggered by the completion of the 'events' workflow."
+            run: echo "I was triggered by completion of the 'events' workflow."
