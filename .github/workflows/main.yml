@@ -1,0 +1,14 @@
+name: FirstWorkflow
+on: [push]
+
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        
+
+        run: |
+          echo "Hello, World!"
+          echo "This is a simple workflow to run shell commands."
+          echo "You can add more commands here as needed."
