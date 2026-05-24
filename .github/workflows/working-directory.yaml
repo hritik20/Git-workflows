@@ -8,7 +8,7 @@ jobs:
             - name: Display working directory information & List files
               run: |
                 pwd
-                ls - a
+                ls -a
                 echo "Current working directory: $(pwd)"
                 echo "Files in the current directory:"
                 echo $GITHUB_SHA
