@@ -1,0 +1,28 @@
+name: working-directory & shells
+on: [push]
+
+jobs:
+    display-wd-info:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Display working directory information & List files
+              run: |
+                pwd
+                ls -a
+                echo "Current working directory: $(pwd)"
+                echo "Files in the current directory:"
+                echo $GITHUB_SHA
+                echo $GITHUB_REPOSITORY
+                echo $GITHUB_WORKSPACE
+    display-wd-info-Windows:
+        runs-on: windows-latest
+        steps:
+            - name: Display working directory information & List files
+              run: |
+                pwd
+                ls -a
+                echo "Current working directory: $(pwd)"
+                echo "Files in the current directory:"
+                echo $GITHUB_SHA
+                echo $GITHUB_REPOSITORY
+                echo $GITHUB_WORKSPACE
