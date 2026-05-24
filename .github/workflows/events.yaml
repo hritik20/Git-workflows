@@ -1,6 +1,20 @@
 name: events
 on: 
     push:
+       branches:
+         - main
+         - "feature/*"
+         - "feature/**"
+         - "!bugfix/*"
+        #branches-ignore:
+         #- develop
+         #- "docs/**"
+       tags:
+          - v1.* #match v1.1,v1.1.2
+          - "!v1.1.1"
+       paths:
+            - "**.js"
+            - "!app.js"
     pull_request:
         types: [opened, synchronize, reopened]
     issues:
