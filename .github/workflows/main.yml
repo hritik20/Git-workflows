@@ -13,6 +13,7 @@ jobs:
           echo "This is a simple workflow to run shell commands."
           echo "You can add more commands here as needed."
   run-python-script:
+    needs: run-shell-commands
     runs-on: ubuntu-latest
     steps:
       - name: Run a Python script
