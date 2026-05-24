@@ -10,3 +10,21 @@ jobs:
           echo "Hello, World!"
           echo "This is a simple workflow to run shell commands."
           echo "You can add more commands here as needed."
+
+  parallel-commands:
+    runs-on: macos-latest
+    steps:
+      - name: Run multiple commands in parallel
+        run: |
+          echo "Running command 1"
+          sleep 5
+          echo "Command 1 completed"
+
+  dependant-job:
+    runs-on: ubuntu-latest
+    needs: [run-shell-commands, parallel-commands]
+    steps:
+      - name: Final step after previous jobs
+        run: |
+          echo "All previous jobs have completed successfully."
+          echo "This job depends on the completion of the first two jobs."
