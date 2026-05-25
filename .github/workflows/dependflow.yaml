@@ -8,4 +8,4 @@ jobs:
     echo-string:
         runs-on: ubuntu-latest
         steps:
-           - run: echo "This workflow runs after the completion of simple-action, checkout, and manual workflows."
+           - run: echo "This workflow runs after the completion of simple-action, checkout, and manual."
