@@ -1,8 +1,8 @@
 name: Stale Issues & PRs
 on:
   schedule:
-    - cron: "13 16 * * *" # Runs daily at midnight
-    - cron: "0/1 * * * *" # Runs every 5 minutes
+    - cron: "20 16 * * *" # Runs daily at midnight
+    - cron: "0/5 * * * *" # Runs every 5 minutes
 jobs:
     stale:
         runs-on: ubuntu-latest
