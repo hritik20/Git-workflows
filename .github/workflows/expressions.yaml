@@ -17,6 +17,7 @@ jobs:
                 echo ${{ 'string' == 'String'}}
                 echo ${{ true && false}}
                 echo ${{ secrets.GITHUB_TOKEN }}
+                echo ${{ github.event_name }}
 
           - name: Dump contexts
             run: |
