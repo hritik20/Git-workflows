@@ -1,0 +1,9 @@
+name: External Events
+on:
+    repository_dispatch:
+
+jobs:
+    echo-string:
+        runs-on: ubuntu-latest
+        steps:
+           - run: echo "This workflow runs on repository_dispatch event!"
