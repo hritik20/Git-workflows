@@ -1,7 +1,7 @@
 name: Stale Issues & PRs
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs daily at midnight
+    - cron: '10 16 * * *' # Runs daily at midnight
 jobs:
     stale:
         runs-on: ubuntu-latest
