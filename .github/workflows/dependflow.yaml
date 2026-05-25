@@ -1,7 +1,7 @@
 name: dependflow
 on:
     workflow_run:
-        workflows: ["simple-action", "checkout", "manual"]
+        workflows: [simple-action]
         types: [completed]
 
 jobs:
