@@ -9,3 +9,4 @@ jobs:
               run: echo $GITHUB_REF
             - name: Log Context
               run: echo '${{github.ref}}'
+              curl -s
