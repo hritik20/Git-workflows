@@ -25,4 +25,4 @@ jobs:
                 echo "SECRETS_CONTEXT: ${{ toJson(secrets) }}"
                 echo "RUNNER_CONTEXT: ${{ toJson(runner) }}"
                 echo "JOB_CONTEXT: ${{ toJson(job) }}"
-                echo "STEPS_CONTEXT: ${{ toJson(steps) }}"
+                
