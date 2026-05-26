@@ -7,11 +7,11 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - name: Decrypt File
-                env:
-                    PASSPHRASE: ${{ secrets.PASSPHRASE }}
-                run: |
-                    mkdir $HOME/secrets
-                    gpg --quiet --batch --yes --decrypt --passphrase="$PASSPHRASE" \
-                    --output $HOME/secrets/secret.json secrets.json.gpg
+              env:
+                PASSPHRASE: ${{ secrets.PASSPHRASE }}
+              run: |
+                mkdir $HOME/secrets
+                gpg --quiet --batch --yes --decrypt --passphrase="$PASSPHRASE" \
+                --output $HOME/secrets/secret.json secrets.json.gpg
             - name: View Encrypted File
-                run: cat $HOME/secrets/secret.json
+              run: cat $HOME/secrets/secret.json
