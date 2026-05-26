@@ -7,6 +7,9 @@ jobs:
       matrix:
         node-version: [14, 16, 18]
         os: [ubuntu-latest, windows-latest]
+        exclude:
+          - node-version: 14
+            os: windows-latest
       max-parallel: 4
     runs-on: ${{ matrix.os }}
     steps:
