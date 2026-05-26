@@ -12,6 +12,6 @@ jobs:
               run: |
                 mkdir $HOME/secrets
                 gpg --quiet --batch --yes --decrypt --passphrase="$PASSPHRASE" \
-                --output $Desktop/secret.json secrets.json.gpg
+                --output $HOME/secrets/secret.json secrets.json.gpg
             - name: View Encrypted File
               run: cat $HOME/secrets/secret.json
