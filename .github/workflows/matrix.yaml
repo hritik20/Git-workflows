@@ -11,7 +11,7 @@ jobs:
         
         include:
           - os: ubuntu-latest
-            is-ubuntu: true
+            #is-ubuntu: true
             node-version: 16
           - experimental: false
           - os: ubuntu-latest
