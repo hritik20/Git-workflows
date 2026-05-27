@@ -12,10 +12,10 @@ jobs:
         include:
           - os: ubuntu-latest
             is-ubuntu: true
-            node-version: 18
+            node-version: 16
           - experimental: true
           - os: ubuntu-latest
-            node-version: 14
+            node-version: 17
             experimental: false
           
         exclude:
