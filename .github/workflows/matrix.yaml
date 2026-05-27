@@ -8,14 +8,15 @@ jobs:
       matrix:
         node-version: [14, 16, 18]
         os: [ubuntu-latest, windows-latest]
+        experimental: [false]
         include:
           - os: ubuntu-latest
             is-ubuntu: true
             node-version: 18
-          - experimental: false
+          - experimental: true
           - os: ubuntu-latest
             node-version: 17
-            experimental: false
+            experimental: true
           
         exclude:
           - node-version: 14
@@ -25,7 +26,7 @@ jobs:
       max-parallel: 4
     runs-on: ${{ matrix.os }}
     steps:
-      - if: matrix.experimental ==  false
+      - if: matrix.experimental ==  true
         run: exit 1
       - run: node -v
 
