@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   node-matrix:
-    continue-on-error: true
+    continue-on-error: ${{ matrix.experimental == false}}
     strategy:
       matrix:
         node-version: [14, 16, 18]
