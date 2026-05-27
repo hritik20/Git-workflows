@@ -14,11 +14,9 @@ jobs:
             node-version: 18
           - experimental: false
           - os: ubuntu-latest
-            node-version: 16
-            experimental: false
-          - os: ubuntu-latest
             node-version: 17
-            
+            experimental: false
+          
         exclude:
           - node-version: 14
             os: windows-latest
