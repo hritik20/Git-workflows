@@ -15,14 +15,14 @@ jobs:
             node-version: 18
           - experimental: true
           - os: ubuntu-latest
-            node-version: 17
+            node-version: 14
             experimental: false
           
         exclude:
           - node-version: 14
             os: windows-latest
             
-      fail-fast: 
+      fail-fast: true
       max-parallel: 4
     runs-on: ${{ matrix.os }}
     steps:
