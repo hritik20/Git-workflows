@@ -10,8 +10,15 @@ jobs:
         os: [ubuntu-latest, windows-latest]
         include:
           - os: ubuntu-latest
+            is-ubuntu: true
             node-version: 18
-            experimental: false
+          - experimental: false
+          - os: ubuntu-latest
+            node-version: 16
+            experimental: true
+          - os: ubuntu-latest
+            node-version: 17
+            
         exclude:
           - node-version: 14
             os: windows-latest
