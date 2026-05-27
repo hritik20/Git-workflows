@@ -16,13 +16,13 @@ jobs:
           - experimental: true
           - os: ubuntu-latest
             node-version: 17
-            experimental: true
+            experimental: false
           
         exclude:
           - node-version: 14
             os: windows-latest
             
-      fail-fast:  false
+      fail-fast:  true
       max-parallel: 4
     runs-on: ${{ matrix.os }}
     steps:
