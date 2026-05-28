@@ -9,7 +9,8 @@ on:
 
 #concurrency: concurrency1
 concurrency:
-  group: concurrency1
+  #group: concurrency1
+  group: ${{ github.event.inputs.environment }}
   cancel-in-progress: true
 jobs:
     sleep:
