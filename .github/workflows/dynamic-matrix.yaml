@@ -1,0 +1,19 @@
+name: Dynamic Matrix
+on: [push]
+
+jobs:
+    node-matrix:
+        strategy:
+          matrix:
+            node-version: [14, 16, 18]
+            os: [ubuntu-latest, windows-latest]
+            
+        runs-on: ${{ matrix.os }}
+        steps:
+        - run: node -v
+    
+        
+        - uses: actions/setup-node@v3
+          with:
+            node-version: ${{ matrix.node-version }}
+        - run: node -v
